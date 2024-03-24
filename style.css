@@ -1,23 +1,90 @@
-#big-container{
-    border: 1em solid orange;
-}
- a:link{
-    color: orange;
- }
- a:visited{
-    color: grey;
- }
-
-#btn-submit{
-    background-color: orange;
-    color: white;
-    height: 3em;
-    width: 7em;
+body {
+    
+    background-color: rgb(233, 233, 222);
 }
 
-#btn-reset{
-    background-color: grey;
-    color: white;
-    height: 3em;
-    width: 7em;
+.big-container {
+    
+    border: 6px solid white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
 }
+
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.container {
+    width: 30%; 
+    height: 10%;
+    padding: 10px;
+    border-radius: 0px;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.hobby {
+    width: 30%; 
+    height: 10%;
+    padding: 10px;
+    border-radius: 0px;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.hobby ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-around; 
+    margin-left: 120%; 
+
+}
+
+.hobby ul li {
+    width: 10%; 
+    text-align: center; 
+    padding: 60px; 
+    margin: 30px ;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.hobby ul li strong {
+    margin-top: 10px; 
+}
+
+.hobby ul li::before {
+    content: ""; 
+    display: block; 
+    width: 100px;
+    height: 100px; 
+    background-size: cover; 
+    margin-bottom: 10px; 
+}
+
+.hobby ul li:nth-child(1)::before {
+    background-image: url('walk.jpg'); 
+
+}
+
+.hobby ul li:nth-child(2)::before {
+    background-image: url('piano.jpg'); 
+}
+
+.hobby ul li:nth-child(3)::before {
+    background-image: url('travel.jpg'); 
+}
+
